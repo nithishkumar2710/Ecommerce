@@ -37,7 +37,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {true ? (
+        {isValidUser ? (
           <>
             <NavBarPanel />
             <Routes>
