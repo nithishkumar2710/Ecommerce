@@ -15,12 +15,12 @@ const ProductDetail = () => {
     state.products.data.find(product => product.id === parseInt(id))
     
   );
-  console.log(product,"pro");
+ 
  
   const handleAddtocart = () => {
     dispatch(productadd({ product, count }));
     setCount(1);
-    navigate('/cart'); // Navigate to the cart page
+    navigate('/cart'); 
   };
 
   if (!product) return <div>Product not found</div>;

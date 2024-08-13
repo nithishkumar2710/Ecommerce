@@ -16,7 +16,6 @@ const Login = () => {
            name:name,
            email:email,
            password:password,
-           loggedIn: true
         }));
     }
 

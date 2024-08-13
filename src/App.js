@@ -8,7 +8,7 @@ import ProductDetail from './components/ProductDetail';
 import { selectUser } from './features/userSlice'; 
 import './App.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Cart from './components/Cart'; {history} 
+import Cart from './components/Cart'; 
 
 
 function App() {

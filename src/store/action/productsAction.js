@@ -14,7 +14,6 @@ export function getProducts (){
             console.error('Failed to fetch products:', error);
             console.log(process.env.REACT_APP_API_URL);
 
-            // Handle the error as needed (e.g., dispatch an error action)
         }
     };
 }

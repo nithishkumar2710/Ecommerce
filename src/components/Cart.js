@@ -19,10 +19,10 @@ const Cart = () => {
     dispatch(removeItem(productId));
   };
 
-  // Calculate subtotal
+  // TO calculate subtotal
   const subtotal = cart.reduce((total, item) => total + (item.price * item.count), 0);
-  const discount = 20; // Static discount fee
-  const deliveryFee = 50; // Static delivery fee
+  const discount = 20; 
+  const deliveryFee = 50; 
   const total = subtotal - discount + deliveryFee;
 
   return (
