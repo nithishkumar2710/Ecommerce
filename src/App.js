@@ -9,6 +9,7 @@ import { selectUser } from './features/userSlice';
 import './App.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cart from './components/Cart'; 
+import Test from './components/test';
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
               <Route path="/product/:id" element={<ProductDetail />} /> 
               <Route path='/cart' element={<Cart />} /> 
               <Route path="*" element={<Navigate to="/" />} /> 
+              <Route path='/test' element={<Test />} />
             </Routes>
           </>
         ) : (

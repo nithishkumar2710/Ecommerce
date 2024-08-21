@@ -13,7 +13,6 @@ export function getProducts (){
         } catch (error) {
             console.error('Failed to fetch products:', error);
             console.log(process.env.REACT_APP_API_URL);
-
         }
     };
 }
