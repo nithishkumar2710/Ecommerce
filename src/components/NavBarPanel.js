@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import './navbar.css';
+import { IoCartOutline } from "react-icons/io5";
 
 export const NavBarPanel = () => {
 
@@ -20,7 +21,7 @@ export const NavBarPanel = () => {
             </Nav>
             <Nav>
               <div className="nav-link-container">
-                <Nav.Link as={Link} to="/cart">Cart</Nav.Link>
+                <Nav.Link as={Link} to="/cart"><IoCartOutline size={"30"}/></Nav.Link>
                 <div className='badge'>{cartLength}</div>
               </div>
             </Nav>

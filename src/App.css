@@ -48,8 +48,15 @@
   color: #282c34;
 }
 
+@font-face {
+  font-family: 'IntegralCF';
+  src: url('./assets/IntegralCF-Heavy.otf') format('opentype');
+  /* font-weight: bold; */
+  /* font-style: normal; */
+}
+
 .custom-navbar-brand {
-  font-family: 'Integral CF', sans-serif;
+  font-family: 'IntegralCF';
   font-weight: 700;
   font-size: 32px;
 }

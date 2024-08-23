@@ -19,6 +19,7 @@ const Login = () => {
             email: email,
             password: password,
         }));
+        
     }
 
     const togglePasswordVisibility = () => {

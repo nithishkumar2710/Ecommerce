@@ -30,12 +30,12 @@ const Cart = () => {
 
   return (
     <Container>
-      <h1 className="my-4">Cart</h1>
+      <h1 style={{fontFamily:'IntegralCF'}} className="my-4"> Your Cart</h1>
       <Row>
-        <Col md={7}>
-          {cart.length === 0 ? (
-            <p>Your cart is empty</p>
+      {cart.length === 0 ? (
+            <p style={{alignContent:'center'}}>Your cart is empty</p>
           ) : (
+        <Col md={7}>
             <ListGroup>
               {cart.map((item, index) => (
                 <ListGroup.Item key={index} className="d-flex align-items-center">
@@ -62,8 +62,8 @@ const Cart = () => {
                 </ListGroup.Item>
               ))}
             </ListGroup>
-          )}
         </Col>
+          )}
         {cart.length > 0 && (
           <Col md={4}>
             <Card className="mt-0">

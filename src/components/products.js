@@ -6,6 +6,7 @@ import { getProducts } from '../store/action/productsAction';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './products.css';
+import StarRating from './StarRating';
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -34,6 +35,7 @@ const Products = () => {
           </div>
           <Card.Body>
             <Card.Text className="text-left card-title" >{product.title}</Card.Text>
+            <div className='d-flex align-items-center'><StarRating rating={product.rating.rate} /><p className='mb-0'>{product.rating.rate}</p></div>
             <Card.Text className="text-left card-price">INR {product.price}</Card.Text>
           </Card.Body>
         </Card>
@@ -43,7 +45,7 @@ const Products = () => {
 
   return (
     <div className="container my-5">
-      <h1 className="text-center mb-5" style={{  fontWeight: 700, fontSize: '48px' }}>New Products</h1>
+      <h1 className="text-center mb-5" style={{ fontFamily:'IntegralCF',  fontWeight: 700, fontSize: '48px' }}>New Products</h1>
       <div className="row mb-4">
         {products1.map(product => renderCard(product))}
       </div>
